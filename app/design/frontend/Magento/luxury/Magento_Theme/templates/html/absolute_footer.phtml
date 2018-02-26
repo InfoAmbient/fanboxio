@@ -1,0 +1,16 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+?>
+<?= /* @escapeNotVerified */ $block->getMiscellaneousHtml(); ?>
+<script type="text/javascript">
+require(['jquery'], function ($) {
+    $(document).ready(function () {
+        $('#search_mini_form div.field.search label').click(function(){
+            $('#search_mini_form div.field.search div.control').toggle();
+        });
+    });
+});
+</script>

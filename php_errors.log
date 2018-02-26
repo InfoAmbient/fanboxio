@@ -1,0 +1,24 @@
+[23-Feb-2018 13:48:13 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/m2latest23/generated/code/Magento/Catalog/Model/ResourceModel/Product/. in [Magento\Catalog\Model\ResourceModel\Product\CollectionFactory] in /var/www/html/m2latest23/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/m2latest23/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Catalog...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Catalog...')
+#2 [internal function]: spl_autoload_call('Magento\\Catalog...')
+#3 /var/www/html/m2latest23/vendor/magento/framework/ObjectManager/Relations/Runtime.php(38): class_exists('Magento\\Catalog...')
+#4 /var/www/html/m2latest23/vendor/magento/framework/Interception/Config/Config.php(166): Magento\Framework\ObjectManager\Relations\Runtime->has('Magento\\Catalog...')
+#5 /var/www/html/m2latest23/vendor/magento/framework/Interception/Config/Config.php(160): Magento\Framework\Inter in /var/www/html/m2latest23/vendor/magento/framework/Code/Generator.php on line 115
+[23-Feb-2018 13:48:18 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/m2latest23/generated/code/Magento/Catalog/Model/ResourceModel/Product/. in [Magento\Catalog\Model\ResourceModel\Product\CollectionFactory] in /var/www/html/m2latest23/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/m2latest23/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Catalog...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Catalog...')
+#2 [internal function]: spl_autoload_call('Magento\\Catalog...')
+#3 /var/www/html/m2latest23/vendor/magento/framework/ObjectManager/Relations/Runtime.php(38): class_exists('Magento\\Catalog...')
+#4 /var/www/html/m2latest23/vendor/magento/framework/Interception/Config/Config.php(166): Magento\Framework\ObjectManager\Relations\Runtime->has('Magento\\Catalog...')
+#5 /var/www/html/m2latest23/vendor/magento/framework/Interception/Config/Config.php(160): Magento\Framework\Inter in /var/www/html/m2latest23/vendor/magento/framework/Code/Generator.php on line 115
+[23-Feb-2018 13:48:26 UTC] PHP Fatal error:  Uncaught RuntimeException: Can't create directory /var/www/html/m2latest23/generated/code/Magento/Catalog/Model/ResourceModel/Product/. in [Magento\Catalog\Model\ResourceModel\Product\CollectionFactory] in /var/www/html/m2latest23/vendor/magento/framework/Code/Generator.php:115
+Stack trace:
+#0 /var/www/html/m2latest23/vendor/magento/framework/Code/Generator/Autoloader.php(35): Magento\Framework\Code\Generator->generateClass('Magento\\Catalog...')
+#1 [internal function]: Magento\Framework\Code\Generator\Autoloader->load('Magento\\Catalog...')
+#2 [internal function]: spl_autoload_call('Magento\\Catalog...')
+#3 /var/www/html/m2latest23/vendor/magento/framework/ObjectManager/Relations/Runtime.php(38): class_exists('Magento\\Catalog...')
+#4 /var/www/html/m2latest23/vendor/magento/framework/Interception/Config/Config.php(166): Magento\Framework\ObjectManager\Relations\Runtime->has('Magento\\Catalog...')
+#5 /var/www/html/m2latest23/vendor/magento/framework/Interception/Config/Config.php(160): Magento\Framework\Inter in /var/www/html/m2latest23/vendor/magento/framework/Code/Generator.php on line 115

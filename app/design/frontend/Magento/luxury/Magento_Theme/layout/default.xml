@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceContainer name="header.panel">
+            <block class="Magento\Cms\Block\Block" name="header-block">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">header-block</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceContainer name="header-wrapper">
+            <container name="header-linksss" as="header-linksss" htmlTag="div" htmlClass="header-linksss">
+                <block class="Magento\Framework\View\Element\Html\Links" name="header.links" before="-">
+                    <arguments>
+                        <argument name="css_class" xsi:type="string">header links</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Wishlist\Block\Link" name="wish-list-link" before="minicart" template="Magento_Wishlist::link-head.phtml">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">Wishlist</argument>
+                    </arguments>
+                </block>
+                <block class="Magento\Framework\View\Element\Html\Link\Current" name="accntt" before="wish-list-link" template="Magento_Customer::link-head.phtml">
+                    <arguments>
+                        <argument name="label" xsi:type="string" translate="true">Account</argument>
+                        <argument name="path" xsi:type="string">customer/account</argument>
+                    </arguments>
+                </block>
+            </container>
+        </referenceContainer>
+        <referenceBlock name="logo">
+            <arguments>
+                <argument name="logo_img_width" xsi:type="number">148</argument>
+                <argument name="logo_img_height" xsi:type="number">43</argument>
+            </arguments>
+        </referenceBlock>
+        <referenceContainer name="footer">
+            <block class="Magento\Store\Block\Switcher" name="store_switcher" as="store_switcher" after="footer_links" template="Magento_Store::switch/stores.phtml"/>
+            <block class="Magento\Cms\Block\Block" name="footer-block">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer-block</argument>
+                </arguments>
+            </block>
+            <block class="Magento\Cms\Block\Block" name="footer-block-bottom" after="footer-block">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">footer-block-bottom</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+        <referenceBlock name="report.bugs" remove="true"/>
+        <move element="copyright" destination="before.body.end"/>
+        <move element="store.menu" destination="header-wrapper" before="-" />
+        <move element="minicart" destination="header-linksss" after="-" />
+        <move element="top.search" destination="header-linksss" after="header.links" />
+        <!--<move element="wish-list-link" destination="header-wrapper" before="minicart" />-->
+        <referenceBlock name="footer_links" remove="true"/>
+        <referenceBlock name="catalog.compare.link" remove="true"/>
+        <referenceBlock name="skip_to_content" remove="true"/>
+        
+    </body>
+</page>

@@ -1,0 +1,44 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Newsletter\Block\Subscribe $block */
+?>
+<div class="block newsletter">
+    <div class="title"><strong><?= $block->escapeHtml(__('Sign up and be fashion forward')) ?></strong></div>
+    <div class="content">
+        <form class="form subscribe" novalidate action="<?= $block->escapeUrl($block->getFormActionUrl()); ?>" method="post" data-mage-init='{"validation": {"errorClass": "mage-error"}}' id="newsletter-validate-detail">
+            <div class="field newsletter-cat">
+                <span><?= $block->escapeHtml(__('want to get access the best pieces before they go, news and other benefits?')); ?></span>
+                <div class="control">
+                   <div class="custom-radio">
+                    <input name="newsletter-cat" type="radio" id="newsletter-cat1" value="mens" />
+                    <label for="newsletter-cat1"><span><?= $block->escapeHtml(__('Mens')); ?></span></label>
+                    </div>
+                    <div class="custom-radio">
+                    <input name="newsletter-cat" type="radio" id="newsletter-cat2" value="womens" />
+                    <label for="newsletter-cat2"><span><?= $block->escapeHtml(__('Womens')); ?></span></label>
+                    </div>
+                    <div class="custom-radio">
+                    <input name="newsletter-cat" type="radio" id="newsletter-cat3" value="kids" />
+                    <label for="newsletter-cat3"><span><?= $block->escapeHtml(__('Kids')); ?></span></label>
+                    </div>
+                </div>
+            </div>
+            <div class="field newsletter">
+                <label class="label" for="newsletter"><span><?= $block->escapeHtml(__('Sign Up for Our Newsletter:')); ?></span></label>
+                <div class="control">
+                    <input name="email" type="email" id="newsletter" placeholder="<?= $block->escapeHtmlAttr(__('Enter your email address')); ?>" data-validate="{required:true, 'validate-email':true}" />
+                </div>
+            </div>
+            <div class="actions">
+                <button class="action subscribe primary" title="<?= $block->escapeHtmlAttr(__('Join Now')); ?>" type="submit">
+                    <span><?= $block->escapeHtml(__('Join Now')) ?></span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>
