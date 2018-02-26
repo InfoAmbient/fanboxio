@@ -818,6 +818,193 @@ div.twoimg-section {
     margin-bottom: 40px;
 }
 
+/*listpage*/
+
+div.toolbar-products {
+    background-color: transparent;
+    max-width: 480px;
+    float: right;
+}
+.toolbar-products .sorter-action {
+    display: inline-block;
+    text-decoration: none;
+    display: none;
+}
+.toolbar-products .sorter {
+    float: left;
+	margin-right:20px;
+}
+.toolbar-products .limiter {
+    float: left;
+}
+.toolbar-products .modes strong#modes-label {
+    display: none;
+}
+.toolbar-products .modes {
+    display: inline-block;
+    float: right;
+    margin-right: 0px;
+}
+.limiter span.limiter-text {
+    display: none;
+}
+.page-with-filter .toolbar-amount {
+    display: none;
+}
+.page-products .toolbar .limiter {
+    display: block;
+    margin-right: 20px;
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    background: #e8e8e8 url(../images/select-bg.svg) no-repeat 100% 45%;
+    background-size: 30px 60px;
+    border: none;
+    height: 36px;
+    padding-right: 25px;
+    text-indent: .01em;
+    text-overflow: '';
+    border-radius: 0px !important;
+    box-shadow: none !important;
+}
+.modes-mode {
+    background-color: #e8e8e8;
+    color: #ccc;
+    border: none;
+    border-right: 0;
+    float: left;
+    font-weight: 400;
+    line-height: 1;
+    padding: 7px 10px;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    height: 36px;
+    box-sizing: border-box;
+    line-height: 20px;
+    border-radius: 0px !important;
+    box-shadow: none !important;
+	margin-left:5px;
+}
+.modes-mode.active {
+    box-shadow: inset 0 1px 0 0 rgba(204,204,204,0.8), inset 0 -1px 0 0 rgba(204,204,204,0.3);
+    background: #e8e8e8;
+    color: #000;
+}
+.modes-mode.active:before {
+    color: #333;
+}
+.products.wrapper~.toolbar .limiter {
+    display: none;
+}
+.pages strong.page {
+    background: #bda46e;
+    font-size: 13px;
+    color: #333;
+    width: 37px;
+    height: 37px;
+    box-sizing: border-box;
+    line-height: 37px;
+}
+.pages a.page {
+    background: #e8e8e8;
+    font-size: 13px;
+    color: #333 !important;
+    width: 37px;
+    height: 37px;
+    box-sizing: border-box;
+    line-height: 37px;
+}
+.pages .item {
+    font-size: 12px;
+    line-height: 36px;
+}
+.pages .action {
+    background: #333 !important;
+    border: none;
+    color: #fff !important;
+    display: inline-block;
+    padding: 0;
+    text-decoration: none;
+    height: 36px;
+    box-sizing: border-box;
+    vertical-align: top;
+    margin-left: 0px;
+	width:36px;
+}
+.pages .action.next {
+    margin-left: 0px;
+}
+.pages .action {
+    box-shadow: none;
+    border-radius: 0px;
+    padding: 0 8px;
+}
+.pages .action.next:before {
+    font-size: 12px;
+    color: #fff !important;
+}
+.pages .action.previous {
+    margin-right: 0px;
+}
+.pages .action.previous:before {
+    font-size: 12px;
+    color: #fff !important;
+}
+.products {
+    clear: both;
+}
+.product-item-info {
+    width: 100% !important;
+}
+.product-item-name a.product-item-link {
+    font-size: 16px;
+    color: #000;
+}
+.price-container .price {
+    font-size: 17px;
+    color: #bda46e;
+}
+.product-item .price-box .price-label {
+    display: none;
+}
+.old-price span.price {
+    text-decoration: line-through;
+    color: #aaa;
+    padding-left: 10px;
+}
+.action.primary {
+    background: #bda46e;
+    border: 1px solid #bda46e;
+}
+.action.primary:hover {
+    background: #333;
+    border: 1px solid #333;
+}
+span.offer.new {
+    position: absolute;
+    top: 18px;
+    background: #bda46e;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: Montserrat-Regular;
+    display: inline-block;
+    height: 36px;
+    width: 60px;
+    line-height: 36px;
+    left: -8px;
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+    text-align: left;
+    padding-left: 12px;
+}
+
+
+
 @media only screen and (min-width:768px){
 	.navigation, .breadcrumbs, .page-header .header.panel, .header.content, .footer.content, .page-wrapper>.widget, .page-wrapper>.page-bottom, .block.category.event, .top-container, .page-main {
     box-sizing: border-box;
