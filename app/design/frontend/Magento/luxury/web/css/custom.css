@@ -1002,7 +1002,9 @@ span.offer.new {
     text-align: left;
     padding-left: 12px;
 }
-
+.navigation .level0.active>.level-top, .navigation .level0.has-active>.level-top {
+    border-color: transparent;
+}
 
 
 @media only screen and (min-width:768px){
